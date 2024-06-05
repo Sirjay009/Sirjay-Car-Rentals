@@ -50,19 +50,6 @@ h1 {
     color: #252525;
 }
 
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -75,6 +62,19 @@ h1 {
 
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Navbar styles with dropdown toggle */
