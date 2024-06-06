@@ -29,7 +29,36 @@
     </header>
 
     <!-- Main content -->
-    <main>Main content</main>
+    <main>
+        <section id="signup">
+            <form action="https://formdump.sirjaycarrentals.net" id="signup-form" method="post">
+                <h2>Sign me up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+                <label for="category-of-car">Category of car</label>
+                <select name="category-of-car" id="category-of-car" required>
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="sport-scar">Sports car</option>
+                    <option value="station-wagon">Station Wagon</option>
+                    <option value="hatchback">Hactch Back</option>
+                    <option value="convertible">Convertible</option>
+                    <option value="mini-van">Mini Van</option>
+                    <option value="pickup-truck">Pickup Truck</option>
+                    <option value="electric-car">Electric Car</option>
+                </select>
+                <br>
+                <button type="submit"><strong>Submit</strong></button>
+            </form>
+        </section>
+    </main>
     
     <!-- Footer -->
     <footer>

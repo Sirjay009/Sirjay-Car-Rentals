@@ -18,8 +18,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald' sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+
 main {
-    background-color: lightgreen;
+    background-color: white;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -41,13 +48,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-h1 {
-    font-family: 'Oswald' sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 #menu {
@@ -98,9 +98,28 @@ main {
 
 /* Hero */
 #hero {
-    height: 600px;
-    width: 100%;
+    height: 400px;
+    width: 50%;
     background: url("../css/images/pexels-mikebirdy-4056598.jpg") no-repeat center center / cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cover-text {
+    font-weight: 900;
+}
+
+h2 {
+    position: relative;
+    left: 1000px;
+    bottom: 300px;
+}
+
+h3 {
+    position: relative;
+    left: 1000px;
+    bottom: 250px;
 }
 
 /* Footer */
@@ -151,6 +170,15 @@ main {
     main {
         /* Push main content down to accomodate larger hearder */
         margin-top: 79px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+
     }
 }
 
@@ -158,5 +186,10 @@ main {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #cover-text {
+        width: 300px;
+        right: 50px
     }
 }
