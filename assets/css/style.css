@@ -30,6 +30,8 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -122,6 +124,45 @@ h3 {
     bottom: 250px;
 }
 
+/* Sign up section */
+#signup {
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-flow: 1;
+}
+
+    #signup-form {
+        color: black;
+        background-color: lightgreen;
+        padding: 30%;
+    }
+
+    #signup-form > h2 {
+        color: blueviolet;
+        margin-bottom: 20px;
+    }
+
+    .text-input {
+        background: transparent;
+        color: black;
+        width: 100%;
+        height: 25px;
+        margin: 5px 0 20px 0;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 0 5px;
+    }
+
+    .join-button {
+        margin-top: 20px;
+        border-radius: 2px;
+        padding: 15px 32px;
+        font-size: 100%;
+        background-color: #454b1b;
+        color: #fafafa;
+    }
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -170,8 +211,6 @@ h3 {
     main {
         /* Push main content down to accomodate larger hearder */
         margin-top: 79px;
-        display: flex;
-        flex-direction: column;
     }
 
     /* Hero */
@@ -180,6 +219,30 @@ h3 {
         right: 50px;
 
     }
+
+    /* Sign up */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+
 }
 
 /* Large devices (laptops and desktops 992px and up) */
