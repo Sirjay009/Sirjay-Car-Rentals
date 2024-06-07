@@ -16,14 +16,27 @@ body {
     /* General project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
-    font-family: 'Oswald' sans-serif;
+h1,
+h2,
+h3 {
+    font-family: 'Oswald'sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: black;
     box-sizing: border-box;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin-top: 47px;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -31,7 +44,6 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-    flex-direction: column;
 }
 
 /* Header */
@@ -58,7 +70,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -92,8 +104,8 @@ nav {
 }
 
 /* Main content */
-main {
     /* Make main element take up any surplus space */
+main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -107,55 +119,57 @@ main {
 }
 
 #cover-text {
-    background-color: darkgreen;
-    font-size: 130%;
+    font-size: 100%;
     position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 40%;
-    padding-left: 10%;
+    left: 10px;
+    bottom: 90px;
+    text-align: center;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     background-color: #fafafa;
 }
 
 /* Sign up form */
+#signup {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border: 2px solid black;
+}
 
-    #signup-form {
-        color: black;
-        background-color: lightgreen;
-        padding: 30%;
-    }
+#signup-form {
+    color: black;
+    background-color: lightgreen;
+}
 
-    #signup-form > h2 {
-        color: black;
-        margin-top: 500px;
-    }
+#signup-form>h2 {
+    color: black;
+    margin-top: 200px;
+}
 
-    #details {
-        margin: auto;
-    }
+.text-input {
+    background: transparent;
+    color: black;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0 5px;
+}
 
-    .text-input {
-        background: transparent;
-        color: black;
-        width: 100%;
-        height: 25px;
-        margin: 5px 0 20px 0;
-        border: 1px solid black;
-        border-radius: 2px;
-        padding: 0 5px;
-    }
-
-    .join-button {
-        margin-top: 20px;
-        border-radius: 2px;
-        padding: 15px 32px;
-        font-size: 100%;
-        background-color: #454b1b;
-        color: #fafafa;
-    }
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
 
 /* Footer */
 #social-networks {
@@ -174,6 +188,7 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -187,7 +202,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -212,6 +227,22 @@ main {
         right: 50px;
     }
 
+    #cover-text {
+        font-size: 100%;
+        position: relative;
+        left: 10px;
+        bottom: 90px;
+        text-align: center;
+    }
+
+    #signup {
+        height: 150vh;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        border: 1px solid black;
+    }
 }
 
 /* Large devices (laptops and desktops 992px and up) */
@@ -224,4 +255,33 @@ main {
         width: 300px;
         right: 50px
     }
+
+    #signup {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        border: 1px solid black;
+    }
+
+    #hero {
+        height: 50vh;
+        width: 50%;
+        position: relative;
+    }
+
+    h2 {
+        position: relative;
+        left: 350px;
+        bottom: 300px;
+    }
+
+    h3 {
+        position: relative;
+        left: 370px;
+        bottom: 300px;
+    }
+
+
 }
